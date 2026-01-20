@@ -1,0 +1,9 @@
+{
+  "name": "@lag/bot",
+  "version": "2.0.0",
+  "description": "Le GOAT des bots",
+  "dependencies": {
+    "@sapphire/framework": "^5.5.0",
+    "discord.js": "^14.25.1"
+  }
+}

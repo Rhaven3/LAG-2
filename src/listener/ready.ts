@@ -1,0 +1,22 @@
+import { Listener } from "@sapphire/framework";
+import { Client } from "discord.js";
+
+export class ReadyListener extends Listener {
+    /**
+     * constructor
+     */
+    public constructor(context: Listener.LoaderContext, options: Listener.Options) {
+        super(context, {
+            ...options,
+            once: true,
+        })
+    }
+    
+    /**
+     * run
+     */
+    public run(client: Client) {
+        const { username, id} = client.user!;
+        this.container.logger.info(`Succesfully logged as ${username} (${id})`)
+    }
+}

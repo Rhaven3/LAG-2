@@ -1,0 +1,8 @@
+{
+  "tasks": {
+  "dev": "deno run --env-file -E -R -N --watch src/index.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
