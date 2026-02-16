@@ -1,0 +1,1 @@
+{"version":3,"file":"initiative.d.ts","sourceRoot":"","sources":["../../src/commands/initiative.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,qBAAa,iBAAkB,SAAQ,OAAO;IAE5B,2BAA2B,CAAC,QAAQ,EAAE,OAAO,CAAC,QAAQ;CAgBvE"}

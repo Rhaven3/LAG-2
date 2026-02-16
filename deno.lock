@@ -3,7 +3,14 @@
   "specifiers": {
     "jsr:@std/assert@1": "1.0.18",
     "jsr:@std/internal@^1.0.12": "1.0.12",
+    "npm:@sapphire/decorators@^6.2.0": "6.2.0",
+    "npm:@sapphire/discord.js-utilities@^7.3.3": "7.3.3",
     "npm:@sapphire/framework@^5.5.0": "5.5.0",
+    "npm:@sapphire/plugin-api@^8.3.1": "8.3.1",
+    "npm:@sapphire/plugin-editable-commands@^4.0.4": "4.0.4",
+    "npm:@sapphire/plugin-logger@^4.1.0": "4.1.0",
+    "npm:@sapphire/plugin-subcommands@^7.0.1": "7.0.1",
+    "npm:@sapphire/utilities@^3.18.2": "3.18.2",
     "npm:discord.js@^14.25.1": "14.25.1"
   },
   "jsr": {
@@ -53,7 +60,7 @@
         "discord-api-types",
         "magic-bytes.js",
         "tslib",
-        "undici"
+        "undici@6.21.3"
       ]
     },
     "@discordjs/util@1.2.0": {
@@ -78,6 +85,12 @@
     },
     "@sapphire/async-queue@1.5.5": {
       "integrity": "sha512-cvGzxbba6sav2zZkH8GPf2oGk9yYoD5qrNWdu9fRehifgnFZJMV+nuy2nON2roRO4yQQ+v7MK/Pktl/HgfsUXg=="
+    },
+    "@sapphire/decorators@6.2.0": {
+      "integrity": "sha512-st1DNDCNoZaZYz3fgCA99W87Bhe6XqM8y0G+Z9NBOBEqvOYkVNGcPMDrMiaZrPD9Z471k8fpLqJVUNSuWUx8Hg==",
+      "dependencies": [
+        "tslib"
+      ]
     },
     "@sapphire/discord-utilities@3.5.0": {
       "integrity": "sha512-H4SY5KTVDZrqA5QG7ob6etwqhdOb3TRSY2wv56f0tiobUdIr0irlrYvdmr8Kg/FRxWU+aiHDIISWGG5vBuxOGw==",
@@ -117,6 +130,9 @@
         "@sapphire/utilities"
       ]
     },
+    "@sapphire/iana-mime-types@1.27.0": {
+      "integrity": "sha512-pU5KlVVbffGU+PhIY36+nBgJDNrJjONKDWCvolbMHqFxnyKTB93dxUUkO11/1U9oMK/4dHQFTbAWFmawF0SSWg=="
+    },
     "@sapphire/lexure@1.1.12": {
       "integrity": "sha512-F7Z3QzRnAZGunRl24/qQMhzRogZU/foumu2EBBunRnQi/o/DLTCwdAbLgJATyPlvJa8N6FrJq0JJwvzM/vXoXg==",
       "dependencies": [
@@ -129,6 +145,36 @@
         "@discordjs/collection@2.1.1",
         "@sapphire/utilities",
         "tslib"
+      ]
+    },
+    "@sapphire/plugin-api@8.3.1": {
+      "integrity": "sha512-hDOT/o6UZYhHePFQ9yVNtXqwuW81sxObxEp47w0plqTgRPaAP0mqygG5+DRIaY36WRrSD8YGeLJWxA40rifLmQ==",
+      "dependencies": [
+        "@sapphire/iana-mime-types",
+        "@types/ws",
+        "@vladfrangu/async_event_emitter",
+        "cookie-es",
+        "tldts",
+        "undici@7.21.0"
+      ]
+    },
+    "@sapphire/plugin-editable-commands@4.0.4": {
+      "integrity": "sha512-1Dd04IjZxYjPWupMJPAyOupWUvYNkhOAUdWhoIBRDRjy6eytOHYYD5TpH8QLXsfgbQNV/ETdWDG0IBVH/Vg/EA==",
+      "dependencies": [
+        "@skyra/editable-commands"
+      ]
+    },
+    "@sapphire/plugin-logger@4.1.0": {
+      "integrity": "sha512-+vLTITQw3DI8+kfDPNJ0yhIK/LrfM/Gro/UFcxgYWLLm+lwNmSpLZxdWe9v7ESXprody7rTp8JXPNBK7UWyE8w==",
+      "dependencies": [
+        "@sapphire/timestamp",
+        "colorette"
+      ]
+    },
+    "@sapphire/plugin-subcommands@7.0.1": {
+      "integrity": "sha512-3ngUpfKfcMX4zIlJ4SHLe10N79XU72H+Wdfcnd9ueMf6FOSMJFvVUfqDIp1rb7/iXi7C5dfx0pQqSwqu3UG0KQ==",
+      "dependencies": [
+        "@sapphire/utilities"
       ]
     },
     "@sapphire/ratelimits@2.4.11": {
@@ -153,8 +199,14 @@
         "tslib"
       ]
     },
+    "@sapphire/timestamp@1.0.5": {
+      "integrity": "sha512-oNwWyNdbt5wm4aYZvlHl1+64U3g0xrFmRIHsnER7RgMxNnp/wmAE4yTK2oUHeadg3t4V9iYctPAQCF+aINke4g=="
+    },
     "@sapphire/utilities@3.18.2": {
       "integrity": "sha512-QGLdC9+pT74Zd7aaObqn0EUfq40c4dyTL65pFnkM6WO1QYN7Yg/s4CdH+CXmx0Zcu6wcfCWILSftXPMosJHP5A=="
+    },
+    "@skyra/editable-commands@3.0.4": {
+      "integrity": "sha512-wQQqOt/GVnKTY0yfL9AmBCvoNIRa/4COxMDYS/TcQexabdZlIfxG4up2zKz8A1or5+73meDZ/D/SvUav36/V2w=="
     },
     "@types/node@25.2.2": {
       "integrity": "sha512-BkmoP5/FhRYek5izySdkOneRyXYN35I860MFAGupTdebyE66uZaR+bXLHq8k4DirE5DwQi3NuhvRU1jqTVwUrQ==",
@@ -168,8 +220,14 @@
         "@types/node"
       ]
     },
-    "@vladfrangu/async_event_emitter@2.4.7": {
-      "integrity": "sha512-Xfe6rpCTxSxfbswi/W/Pz7zp1WWSNn4A0eW4mLkQUewCrXXtMj31lCg+iQyTkh/CkusZSq9eDflu7tjEDXUY6g=="
+    "@vladfrangu/async_event_emitter@2.4.6": {
+      "integrity": "sha512-RaI5qZo6D2CVS6sTHFKg1v5Ohq/+Bo2LZ5gzUEwZ/WkHhwtGTCB/sVLw8ijOkAUxasZ+WshN/Rzj4ywsABJ5ZA=="
+    },
+    "colorette@2.0.20": {
+      "integrity": "sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w=="
+    },
+    "cookie-es@1.2.2": {
+      "integrity": "sha512-+W7VmiVINB+ywl1HGXJXmrqkOhpKrIiVZV6tQuV54ZyQC7MMuBt81Vc336GMLoHBq5hV/F9eXgt5Mnx0Rha5Fg=="
     },
     "discord-api-types@0.38.38": {
       "integrity": "sha512-7qcM5IeZrfb+LXW07HvoI5L+j4PQeMZXEkSm1htHAHh4Y9JSMXBWjy/r7zmUCOj4F7zNjMcm7IMWr131MT2h0Q=="
@@ -189,7 +247,7 @@
         "lodash.snakecase",
         "magic-bytes.js",
         "tslib",
-        "undici"
+        "undici@6.21.3"
       ]
     },
     "fast-deep-equal@3.1.3": {
@@ -204,6 +262,16 @@
     "magic-bytes.js@1.13.0": {
       "integrity": "sha512-afO2mnxW7GDTXMm5/AoN1WuOcdoKhtgXjIvHmobqTD1grNplhGdv3PFOyjCVmrnOZBIT/gD/koDKpYG+0mvHcg=="
     },
+    "tldts-core@7.0.23": {
+      "integrity": "sha512-0g9vrtDQLrNIiCj22HSe9d4mLVG3g5ph5DZ8zCKBr4OtrspmNB6ss7hVyzArAeE88ceZocIEGkyW1Ime7fxPtQ=="
+    },
+    "tldts@7.0.23": {
+      "integrity": "sha512-ASdhgQIBSay0R/eXggAkQ53G4nTJqTXqC2kbaBbdDwM7SkjyZyO0OaaN1/FH7U/yCeqOHDwFO5j8+Os/IS1dXw==",
+      "dependencies": [
+        "tldts-core"
+      ],
+      "bin": true
+    },
     "ts-mixer@6.0.4": {
       "integrity": "sha512-ufKpbmrugz5Aou4wcr5Wc1UUFWOLhq+Fm6qa6P0w0K5Qw2yhaUoiWszhCVuNQyNwrlGiscHOmqYoAox1PtvgjA=="
     },
@@ -216,6 +284,9 @@
     "undici@6.21.3": {
       "integrity": "sha512-gBLkYIlEnSp8pFbT64yFgGE6UIB9tAkhukC23PmMDCe5Nd+cRqKxSjw5y54MK2AZMgZfJWMaNE4nYUHgi1XEOw=="
     },
+    "undici@7.21.0": {
+      "integrity": "sha512-Hn2tCQpoDt1wv23a68Ctc8Cr/BHpUSfaPYrkajTXOS9IKpxVRx/X5m1K2YkbK2ipgZgxXSgsUinl3x+2YdSSfg=="
+    },
     "ws@8.19.0": {
       "integrity": "sha512-blAT2mjOEIi0ZzruJfIhb3nps74PRWTCz1IjglWEEpQl5XS/UNama6u2/rjFkDDouqr4L67ry+1aGIALViWjDg=="
     }
@@ -226,7 +297,14 @@
     ],
     "packageJson": {
       "dependencies": [
+        "npm:@sapphire/decorators@^6.2.0",
+        "npm:@sapphire/discord.js-utilities@^7.3.3",
         "npm:@sapphire/framework@^5.5.0",
+        "npm:@sapphire/plugin-api@^8.3.1",
+        "npm:@sapphire/plugin-editable-commands@^4.0.4",
+        "npm:@sapphire/plugin-logger@^4.1.0",
+        "npm:@sapphire/plugin-subcommands@^7.0.1",
+        "npm:@sapphire/utilities@^3.18.2",
         "npm:discord.js@^14.25.1"
       ]
     }

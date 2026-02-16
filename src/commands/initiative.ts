@@ -1,12 +1,6 @@
 import { Command } from '@sapphire/framework';
 
 export class InitiativeCommand extends Command {
-  // Constructor.
-  public constructor(context: Command.LoaderContext, options: Command.Options) {
-    super(context, { ...options });
-  }
-
-
   //Ajout de la commande dans le registre de commandes de l'application
   public override registerApplicationCommands(registry: Command.Registry) {
     registry.registerChatInputCommand((builder) => builder
@@ -21,7 +15,7 @@ export class InitiativeCommand extends Command {
 
 
   // Programme Executé lors de l'appel de la commande
-  public override async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
-
-  }
+  // public override async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
+  //   console.log("test");
+  // }
 }
