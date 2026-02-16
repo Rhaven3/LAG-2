@@ -1,24 +1,29 @@
-import { SapphireClient } from "@sapphire/framework";
-import { GatewayIntentBits } from "discord.js";
+import './lib/setup';
+const token = process.env.DISCORD_TOKEN;
 
-let token;
-for (const arg of Deno.args) {
-  if ("-D" === arg || "--dev" === arg) {
-    console.log("Mode développement activé");
-    token = Deno.env.get("DISCORD_DEV_TOKEN");
-  } else {
-    console.log("Mode production activé");
-    token = Deno.env.get("DISCORD_TOKEN");
-  }
-}
+import { LogLevel, SapphireClient } from '@sapphire/framework';
+import { GatewayIntentBits } from 'discord.js';
 
 const client = new SapphireClient({
-  intents: [
-    GatewayIntentBits.Guilds,
-    GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent,
-  ],
+	defaultPrefix: '!',
+	caseInsensitiveCommands: true,
+	logger: {
+		level: LogLevel.Debug
+	},
+	intents: [GatewayIntentBits.DirectMessages, GatewayIntentBits.GuildMessages, GatewayIntentBits.Guilds, GatewayIntentBits.MessageContent],
+	loadMessageCommandListeners: true
 });
 
-client.login(token);
-console.log("connecté !");
+const main = async () => {
+	try {
+		client.logger.info('Logging in');
+		await client.login(token);
+		client.logger.info('logged in');
+	} catch (error) {
+		client.logger.fatal(error);
+		await client.destroy();
+		process.exit(1);
+	}
+};
+
+void main();
