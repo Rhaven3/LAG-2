@@ -1,5 +1,10 @@
 import './lib/setup';
-const token = process.env.DISCORD_TOKEN;
+
+// Set token based on environment
+let token = process.env.DISCORD_DEV_TOKEN as string;
+if (process.env.NODE_ENV === 'production') {
+	token = process.env.DISCORD_TOKEN as string;
+}
 
 import { LogLevel, SapphireClient } from '@sapphire/framework';
 import { GatewayIntentBits } from 'discord.js';
