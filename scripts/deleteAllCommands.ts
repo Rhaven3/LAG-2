@@ -28,10 +28,6 @@ if (modeDev) {
 	guildId = config.prod.guildId;
 }
 
-console.log(token);
-console.log(clientId);
-console.log(guildId);
-
 const rest = new REST().setToken(token);
 
 // // for guild-based commands
