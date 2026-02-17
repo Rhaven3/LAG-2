@@ -1,0 +1,1 @@
+{"version":3,"file":"contextMenuCommandSuccess.d.ts","sourceRoot":"","sources":["../../../../src/listener/commands/contextMenuCommands/contextMenuCommandSuccess.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAY,KAAK,gCAAgC,EAAE,MAAM,qBAAqB,CAAC;AAIhG,qBAAa,YAAa,SAAQ,QAAQ;IACzB,GAAG,CAAC,OAAO,EAAE,gCAAgC;IAI7C,MAAM;CAItB"}
