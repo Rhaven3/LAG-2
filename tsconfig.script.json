@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "rootDir": "scripts",
+    "outDir": "dist_script",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true
+  },
+  "include": ["scripts"]
+}
